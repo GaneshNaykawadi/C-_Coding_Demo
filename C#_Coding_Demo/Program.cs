@@ -41,6 +41,12 @@ TypeCasting.useParseMethod();
 
 TypeCasting.useTryParseMethod();
 
-*/
+/// Basics => DataTypes => TypeCasting => exampleTryParse() ///
 
 TypeCasting.exampleTryParse();
+
+/// Basics => DataTypes => TypeCasting => ExerciseCast() ///
+
+TypeCasting.ExerciseCast();
+
+*/

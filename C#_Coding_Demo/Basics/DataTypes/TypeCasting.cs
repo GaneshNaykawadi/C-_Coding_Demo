@@ -83,4 +83,30 @@ public static class TypeCasting
         Console.WriteLine($"Message: {message}");
         Console.WriteLine($"Total: {result}");
     }
+
+    //? Info: challenge 2: 
+    /*  solve the challenge with following criteria:
+
+        1. Solve for result1: Divide value1 by value2, display the result as an int.
+        2. Solve for result2: Divide value2 by value3, display the result as a decimal.
+        3. Solve for result3: Divide value3 by value1, display the result as a float.
+    */
+
+    public static void ExerciseCast()
+    {
+        int value1 = 11;
+        decimal value2 = 6.2m;
+        float value3 = 4.3f;
+
+        // The Convert class is best for converting the fractional decimal numbers into whole integer numbers
+        // Convert.ToInt32() rounds up the way you would expect.
+        int result1 = Convert.ToInt32(value1 / value2);
+        Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
+
+        decimal result2 = value2 / (decimal)value3;
+        Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
+
+        float result3 = value3 / value1;
+        Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
+    }
 }
