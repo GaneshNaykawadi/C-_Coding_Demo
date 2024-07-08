@@ -1,3 +1,4 @@
+using System;
 namespace C__Coding_Demo.Basics.DataTypes;
 
 public static class TypeCasting
@@ -33,6 +34,7 @@ public static class TypeCasting
         Console.WriteLine($"int: {myInt1}");
     }
 
+    //? Info: Example to demonstrate use of ToString() method.
     public static void useToStringMethod()
     {
         int first = 5;
@@ -41,11 +43,44 @@ public static class TypeCasting
         Console.WriteLine(message);
     }
 
+    //? Info: Example to demonstrate use of Parse() method.
     public static void useParseMethod()
     {
         string first = "5";
         string second = "7";
         int sum = int.Parse(first) + int.Parse(second);
         Console.WriteLine(sum);
+    }
+
+    //? Info: Example to demonstrate use of TryParse() method.
+    public static void useTryParseMethod()
+    {
+        string value = "Sammer";
+        int result = 0;
+
+        if (int.TryParse(value, out result))
+            Console.WriteLine($"Measurement: {result}");
+        else
+            Console.WriteLine(value: "Input Error: Unable to Calculate the measurement.");
+    }
+
+    //? Info: Example of TryParse() with array.
+    public static void exampleTryParse()
+    {
+        string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+        string message = "";
+        decimal result = 0m;
+
+        foreach (string value in values)
+        {
+            decimal number;
+            if (decimal.TryParse(value, out number))
+                result += number;
+            else
+                message += value;
+        }
+
+        Console.WriteLine($"Message: {message}");
+        Console.WriteLine($"Total: {result}");
     }
 }

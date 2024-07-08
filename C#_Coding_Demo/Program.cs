@@ -23,7 +23,6 @@ catch (Exception ex)
     System.Console.WriteLine($"Error Occured: {ex.Message}");
 }
 
-*/
 
 /// Basics => DataTypes => TypeCasting => ExplicitCasting() ///
 
@@ -37,3 +36,11 @@ TypeCasting.useToStringMethod();
 /// Basics => DataTypes => TypeCasting => useParseMethod() ///
 
 TypeCasting.useParseMethod();
+
+/// Basics => DataTypes => TypeCasting => useTryParseMethod() ///
+
+TypeCasting.useTryParseMethod();
+
+*/
+
+TypeCasting.exampleTryParse();
