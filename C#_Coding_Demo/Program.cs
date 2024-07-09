@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using C__Coding_Demo;
+﻿using C__Coding_Demo;
 
-Console.WriteLine("C# Program Demo's");
+Console.WriteLine("C# Programs: ");
 
 //! TypeCasting Class
+Console.WriteLine("DataTypes Functionalities Demo's: ");
 CallDataTypesMethods dataTypes = new CallDataTypesMethods();
 dataTypes.TypeCastingFunctionality();
 
