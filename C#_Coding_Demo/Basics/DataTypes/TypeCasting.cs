@@ -1,19 +1,19 @@
 using System;
 namespace C__Coding_Demo.Basics.DataTypes;
 
-public static class TypeCasting
+public class TypeCasting
 {
-    public static string getResult(int first, string second)
+    public string getResult(int first, string second)
     {
         return first + second;
     }
 
-    public static int getResult(int first, int second)
+    public int getResult(int first, int second)
     {
         return first + second;
     }
 
-    public static void ExplicitCasting()
+    public void ExplicitCasting()
     {
         decimal myDecimal = 3.14m;
         Console.WriteLine($"decimal: {myDecimal}");
@@ -35,7 +35,7 @@ public static class TypeCasting
     }
 
     //? Info: Example to demonstrate use of ToString() method.
-    public static void useToStringMethod()
+    public void useToStringMethod()
     {
         int first = 5;
         int second = 7;
@@ -44,7 +44,7 @@ public static class TypeCasting
     }
 
     //? Info: Example to demonstrate use of Parse() method.
-    public static void useParseMethod()
+    public void useParseMethod()
     {
         string first = "5";
         string second = "7";
@@ -53,7 +53,7 @@ public static class TypeCasting
     }
 
     //? Info: Example to demonstrate use of TryParse() method.
-    public static void useTryParseMethod()
+    public void useTryParseMethod()
     {
         string value = "Sammer";
         int result = 0;
@@ -65,7 +65,7 @@ public static class TypeCasting
     }
 
     //? Info: Example of TryParse() with array.
-    public static void exampleTryParse()
+    public void exampleTryParse()
     {
         string[] values = { "12.3", "45", "ABC", "11", "DEF" };
         string message = "";
@@ -92,7 +92,7 @@ public static class TypeCasting
         3. Solve for result3: Divide value3 by value1, display the result as a float.
     */
 
-    public static void ExerciseCast()
+    public void ExerciseCast()
     {
         int value1 = 11;
         decimal value2 = 6.2m;
