@@ -55,6 +55,4 @@ public class CallDataTypesMethods
         typeCasting.ExerciseCast();
     }
 
-
-    /*------------------------///  ArrayExamples  ///---------------------------------*/
 }
