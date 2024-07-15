@@ -15,6 +15,7 @@ dataTypes.TypeCastingFunctionality();
 //! Array Class
 
 string[] pallets = { "B14", "A11", "B12", "A13" };
-Console.WriteLine("Arrays Functionalities Demo's: ");
-CallArrayExamplesMethods ArrayMethods = new CallArrayExamplesMethods(pallets);
+string orderIDs = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+CallArrayExamplesMethods ArrayMethods = new CallArrayExamplesMethods(pallets, orderIDs);
 ArrayMethods.ArrayExamplesMethods();
