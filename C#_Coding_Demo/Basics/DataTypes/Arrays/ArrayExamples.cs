@@ -6,8 +6,9 @@ public class ArrayExamples
     private void printArray(string[] pallets)
     {
         //? printing array elements
+        Console.Write("--");
         foreach (string item in pallets)
-            Console.Write($" -- {item}");
+            Console.Write($" {item} --");
 
         Console.WriteLine();
     }
@@ -28,9 +29,36 @@ public class ArrayExamples
     {
         Console.WriteLine($"Array After Reverse method: ");
 
-        //? for sorting arrays sort() method i used.
+        //? for sorting arrays sort() method is used.
         Array.Reverse(pallets);
 
         printArray(pallets);
     }
+
+    //? Details: The clear() method of Array class used to clear content of array at specific position.
+    internal void ArrayClearExmple(string[] pallets, int index, int length)
+    {
+        Array.Clear(pallets, index, length);
+
+        Console.WriteLine($"After Clearing Array from index: {index} to {(index + length)}, but length is: {pallets.Length}");
+        printArray(pallets);
+    }
+
+    //? Details: The resize() method of Array class is used resize the length of an array.
+    internal void ArrayResizeExample(string[] pallets, int size)
+    {
+        Console.WriteLine($"Before Resize method size is: {pallets.Length}");
+        printArray(pallets);
+
+        Array.Resize(ref pallets, size);
+
+        Console.WriteLine($"After Resize method size is: {pallets.Length} ");
+        printArray(pallets);
+
+        //! We can remove elements of an array using resize method also.
+        Array.Resize(ref pallets, 2);
+        Console.WriteLine($"After shrinking array using Resize() method size is: {pallets.Length} ");
+        printArray(pallets);
+    }
+
 }
