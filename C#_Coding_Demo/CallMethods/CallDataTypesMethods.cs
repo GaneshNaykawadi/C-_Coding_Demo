@@ -2,7 +2,7 @@ using C__Coding_Demo.Basics.DataTypes;
 
 namespace C__Coding_Demo;
 
-public class CallDataTypesMethods
+public class CallDataTypesMethods : TypeCasting
 {
 
     /*------------------------///  TypeCasting  ///---------------------------------*/
@@ -37,22 +37,22 @@ public class CallDataTypesMethods
         }
 
         /// Basics => DataTypes => TypeCasting => ExplicitCasting() ///
-        typeCasting.ExplicitCasting();
+        ExplicitCasting();
 
         /// Basics => DataTypes => TypeCasting => useToStringMethod() ///
-        typeCasting.useToStringMethod();
+        useToStringMethod();
 
         /// Basics => DataTypes => TypeCasting => useParseMethod() ///
-        typeCasting.useParseMethod();
+        useParseMethod();
 
         /// Basics => DataTypes => TypeCasting => useTryParseMethod() ///
-        typeCasting.useTryParseMethod();
+        useTryParseMethod();
 
         /// Basics => DataTypes => TypeCasting => exampleTryParse() ///
-        typeCasting.exampleTryParse();
+        exampleTryParse();
 
         /// Basics => DataTypes => TypeCasting => ExerciseCast() ///
-        typeCasting.ExerciseCast();
+        ExerciseCast();
     }
 
 }

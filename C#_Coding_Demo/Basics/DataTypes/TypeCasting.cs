@@ -13,7 +13,7 @@ public class TypeCasting
         return first + second;
     }
 
-    public void ExplicitCasting()
+    protected void ExplicitCasting()
     {
         decimal myDecimal = 3.14m;
         Console.WriteLine($"decimal: {myDecimal}");
@@ -35,7 +35,7 @@ public class TypeCasting
     }
 
     //? Info: Example to demonstrate use of ToString() method.
-    public void useToStringMethod()
+    protected void useToStringMethod()
     {
         int first = 5;
         int second = 7;
@@ -44,7 +44,7 @@ public class TypeCasting
     }
 
     //? Info: Example to demonstrate use of Parse() method.
-    public void useParseMethod()
+    protected void useParseMethod()
     {
         string first = "5";
         string second = "7";
@@ -53,7 +53,7 @@ public class TypeCasting
     }
 
     //? Info: Example to demonstrate use of TryParse() method.
-    public void useTryParseMethod()
+    protected void useTryParseMethod()
     {
         string value = "Sammer";
         int result = 0;
@@ -65,7 +65,7 @@ public class TypeCasting
     }
 
     //? Info: Example of TryParse() with array.
-    public void exampleTryParse()
+    protected void exampleTryParse()
     {
         string[] values = { "12.3", "45", "ABC", "11", "DEF" };
         string message = "";
@@ -92,7 +92,7 @@ public class TypeCasting
         3. Solve for result3: Divide value3 by value1, display the result as a float.
     */
 
-    public void ExerciseCast()
+    protected void ExerciseCast()
     {
         int value1 = 11;
         decimal value2 = 6.2m;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj": {}
+    "D:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj": {}
   },
   "projects": {
-    "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj": {
+    "D:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
+        "projectUniqueName": "D:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
         "projectName": "C#_Coding_Demo",
-        "projectPath": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
+        "projectPath": "D:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
         "packagesPath": "C:\\Users\\Ganes\\.nuget\\packages\\",
-        "outputPath": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\obj\\",
+        "outputPath": "D:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ganes\\AppData\\Roaming\\NuGet\\NuGet.Config",
