@@ -1,9 +1,22 @@
-using Microsoft.VisualBasic;
-
 namespace C__Coding_Demo.Basics.DataTypes.Strings;
 
 public class StringManipulation
 {
+    // Bank User Object
+    public class Transaction
+    {
+        internal readonly string PaymentID;
+        internal readonly string PayeeName;
+        internal readonly string Amount;
+
+        public Transaction(string id, string name, string amount)
+        {
+            PaymentID = id;
+            PayeeName = name;
+            Amount = amount;
+        }
+    }
+
     //? Composite formatting
     protected void CompositeFormatting(string first, string second)
     {
@@ -40,5 +53,30 @@ public class StringManipulation
 
         discount += $"A discount of {((actualPrice - salePrice) / actualPrice):P2}!"; //inserted
         Console.WriteLine(discount);
+
+        // String Formatting Demo
+        StringFormatting();
+
+    }
+
+    private void StringFormatting()
+    {
+        string input = "Pad this";
+        Console.WriteLine(input.PadRight(12));
+        Console.WriteLine(input.PadLeft(12, '-'));
+
+    }
+
+    // Challenge 1: Show the bank users Transaction Details in proper formating
+    protected void UserTransactionDetails(Transaction[] userTransactions)
+    {
+        foreach (var entry in userTransactions)
+        {
+            var formattedLine = entry.PaymentID.PadRight(10);
+            formattedLine += entry.PayeeName.PadRight(24);
+            formattedLine += entry.Amount.PadLeft(10);
+
+            Console.WriteLine(formattedLine);
+        }
     }
 }

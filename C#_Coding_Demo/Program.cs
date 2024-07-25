@@ -1,8 +1,9 @@
 ﻿using C__Coding_Demo;
 using C__Coding_Demo.Basics.DataTypes.Arrays;
 using C__Coding_Demo.CallMethods;
+using static C__Coding_Demo.Basics.DataTypes.Strings.StringManipulation;
 
-Console.WriteLine("C# Programs: ");
+Console.WriteLine("C# ♡ Programs: ");
 
 //! TypeCasting Class
 /* -------------------------------------------------------------------
@@ -31,10 +32,19 @@ ArrayMethods.ArrayExamplesMethods();
 
 decimal[] values = { 123456.78912m, 0.36785m };
 
+Transaction[] transactions = new Transaction[]
+{
+    new Transaction("769C", "Mr. George Dammer", "$5,000.00"),
+    new Transaction("9D2Q", "Mrs. Pamela Stunner", "$15,700.00"),
+    new Transaction("5C0Z", "Mr. Simon Park", "$11,235.00"),
+    new Transaction("3V4M", "Miss. Kim Kardashian", "$7,025.00"),
+};
+
 //CallStringManipulation stringManipulation = new CallStringManipulation("Hello", "Ganesh");
 //CallStringManipulation stringManipulation = new CallStringManipulation(125.50m, 10);
 //CallStringManipulation stringManipulation = new CallStringManipulation(values);
-CallStringManipulation stringManipulation = new CallStringManipulation(67.55m, 59.99m);
+//CallStringManipulation stringManipulation = new CallStringManipulation(67.55m, 59.99m);
+CallStringManipulation stringManipulation = new CallStringManipulation(transactions);
 stringManipulation.CallStringMethods();
 
 //----------------------------------------------------------------------- */

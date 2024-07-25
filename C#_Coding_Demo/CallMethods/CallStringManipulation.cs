@@ -10,6 +10,7 @@ public class CallStringManipulation : StringManipulation
     private readonly int Discount;
     private readonly decimal Price;
     private readonly decimal SalePrice;
+    private readonly Transaction[] UserTransaction;
 
     private readonly decimal[] Values;
 
@@ -40,6 +41,12 @@ public class CallStringManipulation : StringManipulation
         this.SalePrice = salePrice;
     }
 
+    //! Parameterized Constructor overloading-4
+    public CallStringManipulation(Transaction[] userTransaction)
+    {
+        this.UserTransaction = userTransaction;
+    }
+
     internal void CallStringMethods()
     {
         Console.WriteLine("\n____________________ String Manipulation Demo's: ____________________\n\n");
@@ -48,6 +55,7 @@ public class CallStringManipulation : StringManipulation
         //StringInterpolation(string1, string2);
         //FormatCurrency(Price, Discount);
         //FormatNumbers(Values);
-        CalculateDiscount(Price, SalePrice);
+        //CalculateDiscount(Price, SalePrice);
+        //UserTransactionDetails(UserTransaction);
     }
 }
