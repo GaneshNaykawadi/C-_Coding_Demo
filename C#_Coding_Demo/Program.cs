@@ -41,8 +41,8 @@ Transaction[] transactions = new Transaction[]
 };
 
 //IndexOf() method
-string message = "Find what is (inside the parentheses)";
-string[] substrings = { "G", "w", "F" };
+string message = "Find what is Glory(This is Loki.)";
+string[] substrings = { "at", "w", "Thor" };
 
 //CallStringManipulation stringManipulation = new CallStringManipulation("Hello", "Ganesh");
 //CallStringManipulation stringManipulation = new CallStringManipulation(125.50m, 10);

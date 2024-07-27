@@ -76,7 +76,12 @@ public class StringManipulation
             positions[i] = message.IndexOf(substrings[i]);
 
         for (int item = 0; item < substrings.Length; item++)
-            Console.WriteLine($"The substring \'{substrings[item]}\' is found at location {positions[item]} from the main string \'{message}\'. ");
+        {
+            if (positions[item] == -1)
+                Console.WriteLine($"The substring {substrings[item]} is not found in \'{message}\'");
+            else
+                Console.WriteLine($"The substring \'{substrings[item]}\' is found at location {positions[item]} from the main string \'{message}\'. ");
+        }
     }
 
 
