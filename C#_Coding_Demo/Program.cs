@@ -42,7 +42,7 @@ Transaction[] transactions = new Transaction[]
 
 //IndexOf() method
 string message = "Find what is (inside the parentheses)";
-string[] substrings = { "a", "w", "F" };
+string[] substrings = { "G", "w", "F" };
 
 //CallStringManipulation stringManipulation = new CallStringManipulation("Hello", "Ganesh");
 //CallStringManipulation stringManipulation = new CallStringManipulation(125.50m, 10);
