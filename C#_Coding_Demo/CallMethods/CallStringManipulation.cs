@@ -14,6 +14,9 @@ public class CallStringManipulation : StringManipulation
 
     private readonly decimal[] Values;
 
+    private readonly string Message;
+    private readonly string[] Substrings;
+
     //! Parameterized Constructor
     public CallStringManipulation(string str1, string str2)
     {
@@ -47,6 +50,13 @@ public class CallStringManipulation : StringManipulation
         this.UserTransaction = userTransaction;
     }
 
+    //! Parameterized Constructor overloading-5
+    public CallStringManipulation(string[] substrings, string message)
+    {
+        this.Message = message;
+        this.Substrings = substrings;
+    }
+
     internal void CallStringMethods()
     {
         Console.WriteLine("\n____________________ String Manipulation Demo's: ____________________\n\n");
@@ -57,5 +67,6 @@ public class CallStringManipulation : StringManipulation
         //FormatNumbers(Values);
         //CalculateDiscount(Price, SalePrice);
         //UserTransactionDetails(UserTransaction);
+        findIndex(Substrings, Message);        
     }
 }

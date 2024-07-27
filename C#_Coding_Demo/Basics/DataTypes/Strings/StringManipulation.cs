@@ -67,6 +67,19 @@ public class StringManipulation
 
     }
 
+    //? String Manipulation: use of IndexOf() method.
+    protected void findIndex(string[] substrings, string message)
+    {
+        int[] positions = new int[(substrings.Length)];
+
+        for (int i = 0; i < substrings.Length; i++)
+            positions[i] = message.IndexOf(substrings[i]);
+
+        for (int item = 0; item < substrings.Length; item++)
+            Console.WriteLine($"The substring \'{substrings[item]}\' is found at location {positions[item]} from the main string \'{message}\'. ");
+    }
+
+
     // Challenge 1: Show the bank users Transaction Details in proper formating
     protected void UserTransactionDetails(Transaction[] userTransactions)
     {
@@ -79,4 +92,5 @@ public class StringManipulation
             Console.WriteLine(formattedLine);
         }
     }
+
 }
