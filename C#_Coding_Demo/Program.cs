@@ -41,15 +41,19 @@ Transaction[] transactions = new Transaction[]
 };
 
 //IndexOf() method
-string message = "Find what is Glory(This is Loki.)";
+String message = "Find what is Glory(This is Loki.)";
 string[] substrings = { "at", "w", "Thor" };
+
+int openingPosition = 5;
+int length = 7;
 
 //CallStringManipulation stringManipulation = new CallStringManipulation("Hello", "Ganesh");
 //CallStringManipulation stringManipulation = new CallStringManipulation(125.50m, 10);
 //CallStringManipulation stringManipulation = new CallStringManipulation(values);
 //CallStringManipulation stringManipulation = new CallStringManipulation(67.55m, 59.99m);
 //CallStringManipulation stringManipulation = new CallStringManipulation(transactions);
-CallStringManipulation stringManipulation = new CallStringManipulation(substrings, message);
+//CallStringManipulation stringManipulation = new CallStringManipulation(substrings, message);
+CallStringManipulation stringManipulation = new CallStringManipulation(message, openingPosition, length);
 stringManipulation.CallStringMethods();
 
 //----------------------------------------------------------------------- */

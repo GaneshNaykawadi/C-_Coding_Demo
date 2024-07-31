@@ -1,3 +1,5 @@
+using System;
+
 namespace C__Coding_Demo.Basics.DataTypes.Strings;
 
 public class StringManipulation
@@ -68,7 +70,7 @@ public class StringManipulation
     }
 
     //? String Manipulation: use of IndexOf() method.
-    protected void findIndex(string[] substrings, string message)
+    protected internal void findIndex(string[] substrings, string message)
     {
         int[] positions = new int[(substrings.Length)];
 
@@ -82,6 +84,12 @@ public class StringManipulation
             else
                 Console.WriteLine($"The substring \'{substrings[item]}\' is found at location {positions[item]} from the main string \'{message}\'. ");
         }
+    }
+
+    //? String Manipulation: use of SubString(StartPosition, length)
+    protected void PrintSubstring(String message, int OpeningPosition, int length)
+    {
+        Console.WriteLine($"The substring you requested is: {message.Substring(OpeningPosition, length)}");
     }
 
 

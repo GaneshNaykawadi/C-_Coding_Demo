@@ -14,8 +14,11 @@ public class CallStringManipulation : StringManipulation
 
     private readonly decimal[] Values;
 
-    private readonly string Message;
+    private readonly String Message;
     private readonly string[] Substrings;
+
+    private readonly int OpeningPosition;
+    private readonly int Length;
 
     //! Parameterized Constructor
     public CallStringManipulation(string str1, string str2)
@@ -51,10 +54,18 @@ public class CallStringManipulation : StringManipulation
     }
 
     //! Parameterized Constructor overloading-5
-    public CallStringManipulation(string[] substrings, string message)
+    public CallStringManipulation(string[] substrings, String message)
     {
         this.Message = message;
         this.Substrings = substrings;
+    }
+
+    //! Parameterized Constructor overloading-6
+    public CallStringManipulation(String message, int openingPosition, int length)
+    {
+        this.Message = message;
+        this.OpeningPosition = openingPosition;
+        this.Length = length;
     }
 
     internal void CallStringMethods()
@@ -67,6 +78,7 @@ public class CallStringManipulation : StringManipulation
         //FormatNumbers(Values);
         //CalculateDiscount(Price, SalePrice);
         //UserTransactionDetails(UserTransaction);
-        findIndex(Substrings, Message);        
+        //findIndex(Substrings, Message);
+        PrintSubstring(Message, OpeningPosition, Length);
     }
 }
