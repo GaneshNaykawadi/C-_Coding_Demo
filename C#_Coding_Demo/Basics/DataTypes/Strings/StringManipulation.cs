@@ -92,8 +92,53 @@ public class StringManipulation
         Console.WriteLine($"The substring you requested is: {message.Substring(OpeningPosition, length)}");
     }
 
+    //? String Manipulation: use the string LastIndexOf() method.
+    protected void findIndexOfAny()
+    {
+        string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+        int openingPosition = message.LastIndexOf('(');
 
-    // Challenge 1: Show the bank users Transaction Details in proper formating
+        openingPosition += 1;
+        int closingPosition = message.LastIndexOf(')');
+        int length = closingPosition - openingPosition;
+        Console.WriteLine(message.Substring(openingPosition, length));
+    }
+
+    //? String Manipulation: use the string IndexOf() method.
+    protected void findAllOccurences()
+    {
+        string message = "(What if) there are (more than) one (set of parentheses)?";
+        while (true)
+        {
+            int openingPosition = message.IndexOf('(');
+            if (openingPosition == -1) break;
+
+            openingPosition += 1;
+            int closingPosition = message.IndexOf(')');
+            int length = closingPosition - openingPosition;
+            Console.WriteLine(message.Substring(openingPosition, length));
+
+            // Note the overload of the Substring to return only the remaining 
+            // unprocessed message:
+            message = message.Substring(closingPosition + 1);
+        }
+    }
+
+    //? String Manipulation: use the string Remove() method.
+    protected void RemoveStringPart(string Data, int startPoint, int count)
+    {
+        Console.WriteLine($"The String Data Before Manipluation is: {Data}");
+        Console.WriteLine($"The String Data After Manipluation is: {Data.Remove(startPoint, count)}");
+    }
+
+    //? String Manipulation: use the string Replace() method.
+    protected void ReplaceStringData(string message, string findPattern, string replaceData)
+    {
+        Console.WriteLine($"The Original Data is: {message}");
+        Console.WriteLine($"The Replaced Data is: {message.Replace(findPattern, replaceData)}");
+    }
+
+    //* Challenge 1: Show the bank users Transaction Details in proper formating
     protected void UserTransactionDetails(Transaction[] userTransactions)
     {
         foreach (var entry in userTransactions)
@@ -104,6 +149,43 @@ public class StringManipulation
 
             Console.WriteLine(formattedLine);
         }
+    }
+
+    //* Challenge 2: Complete a challenge to extract, replace, and remove data from an input string.
+    protected void ModifyStringData(string input)
+    {
+        string output = "";
+
+        //Task 1: Extract the Quantity from string
+        const string openSpan = "<span>";
+        const string closeSpan = "</span>";
+
+        //get the index of quantity
+        int QuantityStartPosition = input.IndexOf(openSpan) + openSpan.Length;
+        int QuantityEndPosition = input.IndexOf(closeSpan);
+        int QuantityLength = QuantityEndPosition - QuantityStartPosition;
+        string Quantity = $"Quantity: {input.Substring(QuantityStartPosition, QuantityLength)}";
+
+        //Task 2: replacing the trademark symbol with the registered trademark symbol
+        const string trademarkSymbol = "&trade";
+        const string registeredTrademarkSymbol = "&reg";
+        output = input.Replace(trademarkSymbol, registeredTrademarkSymbol);
+
+        //Task 3: remove the opening <div> and closing </div> tags.
+        const string OpeningDivTag = "<div>";
+        const string closingDivTag = "</div>";
+
+        //first we remove oepening Div Tag
+        int openingDivPosition = output.IndexOf(OpeningDivTag);
+        output = output.Remove(openingDivPosition, OpeningDivTag.Length);
+
+        //second we remove closing Div tag
+        int closingDivPosition = output.IndexOf(closingDivTag);
+        output = output.Remove(closingDivPosition, closingDivTag.Length);
+
+        // print the output
+        Console.WriteLine(Quantity);
+        Console.WriteLine(output);
     }
 
 }

@@ -41,11 +41,18 @@ Transaction[] transactions = new Transaction[]
 };
 
 //IndexOf() method
-String message = "Find what is Glory(This is Loki.)";
-string[] substrings = { "at", "w", "Thor" };
+// String message = "Find what is Glory(This is Loki.)";
+// string[] substrings = { "at", "w", "Thor" };
 
-int openingPosition = 5;
-int length = 7;
+// int openingPosition = 5;
+// int length = 7;
+
+// for replace() method
+// string Data = "This--is--Replaced--data";
+// string pattern = "--";
+// string replace = " ";
+
+const string InputString = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
 //CallStringManipulation stringManipulation = new CallStringManipulation("Hello", "Ganesh");
 //CallStringManipulation stringManipulation = new CallStringManipulation(125.50m, 10);
@@ -53,7 +60,9 @@ int length = 7;
 //CallStringManipulation stringManipulation = new CallStringManipulation(67.55m, 59.99m);
 //CallStringManipulation stringManipulation = new CallStringManipulation(transactions);
 //CallStringManipulation stringManipulation = new CallStringManipulation(substrings, message);
-CallStringManipulation stringManipulation = new CallStringManipulation(message, openingPosition, length);
+//CallStringManipulation stringManipulation = new CallStringManipulation(message, openingPosition, length);
+//CallStringManipulation stringManipulation = new CallStringManipulation(Data, pattern, replace);
+CallStringManipulation stringManipulation = new CallStringManipulation(InputString);
 stringManipulation.CallStringMethods();
 
 //----------------------------------------------------------------------- */

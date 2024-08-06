@@ -19,53 +19,70 @@ public class CallStringManipulation : StringManipulation
 
     private readonly int OpeningPosition;
     private readonly int Length;
+    private readonly string findPattern;
+    private readonly string replacePattern;
+    private readonly string InputString;
 
     //! Parameterized Constructor
+    public CallStringManipulation(string inputString)
+    {
+        this.InputString = inputString;
+    }
+
+    //! Parameterized Constructor overloading-1
     public CallStringManipulation(string str1, string str2)
     {
         this.string1 = str1;
         this.string2 = str2;
     }
 
-    //! Parameterized Constructor overloading-1
+    //! Parameterized Constructor overloading-2
     public CallStringManipulation(decimal price, int discount)
     {
         this.Price = price;
         this.Discount = discount;
     }
 
-    //! Parameterized Constructor overloading-2
+    //! Parameterized Constructor overloading-3
     public CallStringManipulation(decimal[] values)
     {
         this.Values = values;
     }
 
-    //! Parameterized Constructor overloading-3
+    //! Parameterized Constructor overloading-4
     public CallStringManipulation(decimal price, decimal salePrice)
     {
         this.Price = price;
         this.SalePrice = salePrice;
     }
 
-    //! Parameterized Constructor overloading-4
+    //! Parameterized Constructor overloading-5
     public CallStringManipulation(Transaction[] userTransaction)
     {
         this.UserTransaction = userTransaction;
     }
 
-    //! Parameterized Constructor overloading-5
+    //! Parameterized Constructor overloading-6
     public CallStringManipulation(string[] substrings, String message)
     {
         this.Message = message;
         this.Substrings = substrings;
     }
 
-    //! Parameterized Constructor overloading-6
+    //! Parameterized Constructor overloading-7
     public CallStringManipulation(String message, int openingPosition, int length)
     {
         this.Message = message;
         this.OpeningPosition = openingPosition;
         this.Length = length;
+    }
+
+    //! Parameterized Constructor overloading-8
+    public CallStringManipulation(String message, string pattern, string replace)
+    {
+        this.Message = message;
+        this.findPattern = pattern;
+        this.replacePattern = replace;
     }
 
     internal void CallStringMethods()
@@ -79,6 +96,11 @@ public class CallStringManipulation : StringManipulation
         //CalculateDiscount(Price, SalePrice);
         //UserTransactionDetails(UserTransaction);
         //findIndex(Substrings, Message);
-        PrintSubstring(Message, OpeningPosition, Length);
+        //PrintSubstring(Message, OpeningPosition, Length);
+        //findIndexOfAny();
+        //findAllOccurences();
+        //RemoveStringPart(Message, OpeningPosition, Length);
+        //ReplaceStringData(Message, findPattern, replacePattern);
+        ModifyStringData(InputString);
     }
 }
