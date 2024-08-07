@@ -186,6 +186,8 @@ public class StringManipulation
         // print the output
         Console.WriteLine(Quantity);
         Console.WriteLine(output);
+
+        
     }
 
 }
