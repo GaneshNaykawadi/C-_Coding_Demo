@@ -6,13 +6,13 @@ using static C__Coding_Demo.Basics.DataTypes.Strings.StringManipulation;
 Console.WriteLine("C# ♡ Programs: ");
 
 //! TypeCasting Class
-/* -------------------------------------------------------------------
+// -------------------------------------------------------------------
 
 Console.WriteLine("DataTypes Functionalities Demo's: ");
 CallDataTypesMethods dataTypes = new CallDataTypesMethods();
 dataTypes.TypeCastingFunctionality();
 
---------------------------------------------------------------------- */
+// --------------------------------------------------------------------- //
 
 //! Array Class
 
@@ -28,7 +28,7 @@ ArrayMethods.ArrayExamplesMethods();
 
 //! StringManipulation Class
 
-//* --------------------------------------------------------------------
+/* --------------------------------------------------------------------
 
 decimal[] values = { 123456.78912m, 0.36785m };
 
@@ -65,4 +65,4 @@ const string InputString = "<div><h2>Widgets &trade;</h2><span>5000</span></div>
 CallStringManipulation stringManipulation = new CallStringManipulation(InputString);
 stringManipulation.CallStringMethods();
 
-//----------------------------------------------------------------------- */
+// ----------------------------------------------------------------------- */

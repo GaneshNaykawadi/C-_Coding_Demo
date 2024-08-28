@@ -15,7 +15,10 @@ public class CallDataTypesMethods : TypeCasting
         //? create instance of Typecasting class
         TypeCasting typeCasting = new TypeCasting();
 
+        //? Create instance of PetAdoption_Guided_Project Class
+        PetAdoption_Guided_Project PetAdoption = new PetAdoption_Guided_Project();
 
+        /*
         //? Calling Methods of TypeCasting Class
         void getResult()
         {
@@ -53,6 +56,11 @@ public class CallDataTypesMethods : TypeCasting
 
         /// Basics => DataTypes => TypeCasting => ExerciseCast() ///
         ExerciseCast();
+        */
+
+        //PetAdoption Guided Project
+        Console.WriteLine("||  PetAdoption Guided Project || ");
+        PetAdoption.PetAdoptionFunc();
     }
 
 }
