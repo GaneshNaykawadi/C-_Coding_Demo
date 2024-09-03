@@ -6,13 +6,13 @@ using static C__Coding_Demo.Basics.DataTypes.Strings.StringManipulation;
 Console.WriteLine("C# ♡ Programs: ");
 
 //! TypeCasting Class
-// -------------------------------------------------------------------
+/* -------------------------------------------------------------------
 
 Console.WriteLine("DataTypes Functionalities Demo's: ");
 CallDataTypesMethods dataTypes = new CallDataTypesMethods();
 dataTypes.TypeCastingFunctionality();
 
-// --------------------------------------------------------------------- //
+/ --------------------------------------------------------------------- */
 
 //! Array Class
 
@@ -65,4 +65,15 @@ const string InputString = "<div><h2>Widgets &trade;</h2><span>5000</span></div>
 CallStringManipulation stringManipulation = new CallStringManipulation(InputString);
 stringManipulation.CallStringMethods();
 
-// ----------------------------------------------------------------------- */
+/ ----------------------------------------------------------------------- */
+
+//! MedicineTimeAlert Class
+
+//CallFunctionConcepts medicineAlert = new CallFunctionConcepts();  //! for medicine Alert class
+//medicineAlert.CallMedicineAlertFunctions();
+
+//! Ipv4 Address Check class
+string[] Ipv4Address = { "107.31.1.5", "255.0.0.255", "555..0.555", "255...255" };
+CallFunctionConcepts validateIPAddress = new CallFunctionConcepts(Ipv4Address);
+validateIPAddress.isValidIPAddress(Ipv4Address);
+
