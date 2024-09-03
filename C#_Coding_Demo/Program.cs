@@ -73,7 +73,7 @@ stringManipulation.CallStringMethods();
 //medicineAlert.CallMedicineAlertFunctions();
 
 //! Ipv4 Address Check class
-string[] Ipv4Address = { "107.31.1.5", "255.0.0.255", "555..0.555", "255...255" };
+/* string[] Ipv4Address = { "107.31.1.5", "255.0.0.255", "555..0.555", "255...255" };
 CallFunctionConcepts validateIPAddress = new CallFunctionConcepts(Ipv4Address);
-validateIPAddress.isValidIPAddress(Ipv4Address);
+validateIPAddress.isValidIPAddress(Ipv4Address);  */
 
