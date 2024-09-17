@@ -138,6 +138,23 @@ public class StringManipulation
         Console.WriteLine($"The Replaced Data is: {message.Replace(findPattern, replaceData)}");
     }
 
+    //? String Manipulation: check if the string is immutable or not?
+    protected void checkImmutableOrNot()
+    {
+        string status = "Healthy";
+
+        Console.WriteLine($"Start: {status}");
+        SetHealth(status, false);
+        Console.WriteLine($"End: {status}");
+
+        void SetHealth(string status, bool isHealthy)
+        {
+            status = (isHealthy ? "Healthy" : "Unhealthy");
+            Console.WriteLine($"Middle: {status}");
+        }
+    }
+
+
     //* Challenge 1: Show the bank users Transaction Details in proper formating
     protected void UserTransactionDetails(Transaction[] userTransactions)
     {
@@ -187,7 +204,7 @@ public class StringManipulation
         Console.WriteLine(Quantity);
         Console.WriteLine(output);
 
-        
+
     }
 
 }

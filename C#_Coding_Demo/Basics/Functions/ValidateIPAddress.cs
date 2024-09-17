@@ -1,5 +1,3 @@
-using System.Net.Sockets;
-
 namespace C__Coding_Demo.Basics.Functions;
 
 public class ValidateIPAddress
@@ -34,7 +32,9 @@ public class ValidateIPAddress
 
     private void ValidateLength()
     {
-        validLength = address.Length == 4;
+        // Console.WriteLine($"Start: {status}");
+        // SetHealth(status, false);
+        // Console.WriteLine($"End: {status}");
     }
 
     private void ValidateZeroes()

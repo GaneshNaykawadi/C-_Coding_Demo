@@ -101,6 +101,7 @@ public class CallStringManipulation : StringManipulation
         //findAllOccurences();
         //RemoveStringPart(Message, OpeningPosition, Length);
         //ReplaceStringData(Message, findPattern, replacePattern);
-        ModifyStringData(InputString);
+        //ModifyStringData(InputString);
+        checkImmutableOrNot();
     }
 }
