@@ -204,7 +204,47 @@ public class StringManipulation
         Console.WriteLine(Quantity);
         Console.WriteLine(output);
 
+    }
 
+
+    //* Challenge 3: reverse a given word (string) without using string.reverse() method.
+    protected string reverse(string input)
+    {
+        string result = "";
+        //Console.WriteLine("The actual string is: " + input);
+
+        if (input == "" || input == null)
+            return "given string is empty! Please provide valid string.";
+        else
+        {
+            for (int i = (input.Length - 1); i >= 0; i--)
+            {
+                result += input[i];
+            }
+            //Console.WriteLine("The reversed string is: " + result);
+            return result;
+        }
+    }
+
+    //* Challenge 4: reverse a given line (string) without using string.reverse() method.
+    protected string reverseline(string InputLine)
+    {
+        string result = "";
+        Console.WriteLine("The actual string is: " + InputLine);
+
+        if (InputLine == "" || InputLine == null)
+            return "given string is empty! Please provide valid string.";
+        else
+        {
+            string[] words = InputLine.Split(" ");
+            foreach (string word in words)
+            {
+                result += reverse(word) + " ";
+            }
+
+            Console.WriteLine("The reversed string is: " + result.Trim());
+            return result;
+        }
     }
 
 }
