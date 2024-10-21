@@ -28,7 +28,7 @@ ArrayMethods.ArrayExamplesMethods();
 
 //! StringManipulation Class
 
-//* --------------------------------------------------------------------
+/* --------------------------------------------------------------------
 
 decimal[] values = { 123456.78912m, 0.36785m };
 
@@ -65,12 +65,12 @@ const string InputString = "<div><h2>Widgets &trade;</h2><span>5000</span></div>
 CallStringManipulation stringManipulation = new CallStringManipulation(InputString);
 stringManipulation.CallStringMethods();
 
-// ----------------------------------------------------------------------- */
+----------------------------------------------------------------------- */
 
 //! MedicineTimeAlert Class
 
-//CallFunctionConcepts medicineAlert = new CallFunctionConcepts();  //! for medicine Alert class
-//medicineAlert.CallMedicineAlertFunctions();
+CallFunctionConcepts medicineAlert = new CallFunctionConcepts();  //! for medicine Alert class
+medicineAlert.CallMedicineAlertFunctions();
 
 //! Ipv4 Address Check class
 /* string[] Ipv4Address = { "107.31.1.5", "255.0.0.255", "555..0.555", "255...255" };
