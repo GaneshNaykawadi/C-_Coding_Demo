@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
+      "projectUniqueName": "d:\\Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
       "projectName": "C#_Coding_Demo",
-      "projectPath": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
+      "projectPath": "d:\\Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\C#_Coding_Demo.csproj",
       "packagesPath": "C:\\Users\\Ganes\\.nuget\\packages\\",
-      "outputPath": "d:\\03. Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\obj\\",
+      "outputPath": "d:\\Coding Practice\\.NET Practice\\C#\\C#_Coding_Demo\\C#_Coding_Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ganes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
