@@ -89,7 +89,7 @@ public class PetAdoption_Guided_Project
             ourAnimals[i, 3] = "Nickname: " + animalNickname;
             ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
             ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
-            if(decimal.TryParse(suggestedDonation, out decimalDonation))
+            if (decimal.TryParse(suggestedDonation, out decimalDonation))
             {
                 decimalDonation = 45.00m;   //* if suggestedDonation NOT a number, default to 45.00
             }
@@ -147,8 +147,8 @@ public class PetAdoption_Guided_Project
                         {
                             dogCharacteristic = readResult.ToLower().Trim();
                         }
-                    } 
-                    
+                    }
+
                     string dogDescription = "";
                     bool noMatchesDog = true;
                     // #6 loop through the ourAnimals array to search for matching animals
@@ -179,5 +179,4 @@ public class PetAdoption_Guided_Project
 
         } while (menuSelection != "exit");
     }
-    
 }
